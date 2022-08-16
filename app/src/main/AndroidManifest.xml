@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.monpiss">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.MONPISS"
+        android:usesCleartextTraffic="true">
+        <activity
+            android:name=".ActivityFileKC"
+            android:theme="@style/Theme.ToolbarUtama"/>
+        <activity
+            android:name=".ActivityAbout"
+            android:theme="@style/Theme.ToolbarUtama" />
+        <activity
+            android:name=".ActivityRegister"
+            android:theme="@style/Theme.ToolbarUtama" />
+        <activity
+            android:name=".Home_KCP"
+            android:parentActivityName=".ActivityHome"
+            android:theme="@style/Theme.MONPISS" />
+        <activity
+            android:name=".Home_Unit"
+            android:parentActivityName=".ActivityHome"
+            android:theme="@style/Theme.MONPISS" />
+        <activity
+            android:name=".KC.Home_KC"
+            android:parentActivityName=".ActivityHome"
+            android:theme="@style/Theme.MONPISS" />
+        <activity
+            android:name=".Unit.LayoutUnit"
+            android:theme="@style/Theme.ToolbarUtama" />
+        <activity
+            android:name=".LayoutKCP"
+            android:theme="@style/Theme.ToolbarUtama" />
+        <activity
+            android:name=".LayoutKC"
+            android:theme="@style/Theme.ToolbarUtama" />
+        <activity
+            android:name=".ActivityLogin"
+            android:theme="@style/Theme.ToolbarUtama" />
+        <activity
+            android:name=".ActivityHome"
+            android:theme="@style/Theme.ToolbarUtama" />
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.ToolbarUtama">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

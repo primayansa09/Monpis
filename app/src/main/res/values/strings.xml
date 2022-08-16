@@ -1,0 +1,162 @@
+<resources>
+    <string name="app_name">MONPISS</string>
+    <string name="tab_kc">KC</string>
+    <string name="tab_kcp">KCP</string>
+    <string name="tab_unit">Unit</string>
+    <string name="standar">Standar</string>
+    <string name="tidak_standar">Tidak Standar</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="search">Search</string>
+
+    <!--nama tablayout kc,kcp,unit -->
+    <string name="parking">Parkir</string>
+    <string name="eksterior">Eksterior</string>
+    <string name="kondisi_atm">ATM</string>
+    <string name="banking_hall">Banking Hall</string>
+    <string name="toilet">Toilet</string>
+    <string name="ruang_arsip">Ruangan</string>
+
+    <!--deskripsi parkir-->
+    <string name="p_1">1. Terdapat area parkir untuk nasabah di halaman kantor atau di tempat lain dekat kantor yang disediakan khusus untuk nasabah</string>
+    <string name="p_2">2. Terdapat tanda-tanda petunjuk parkir yang memudahkan nasabah masuk/keluar area dan parkir</string>
+    <string name="p_3">3. Parkir rapi, tertib, aman dan bersih</string>
+
+    <!--deskripsi eksterior&facade -->
+    <string name="e_1">1. Terdapat pylon UKO dengan desain terbaru sesuai standar dan dalam kondisi baik (tidak rusak atau kotor)</string>
+    <string name="e_2">2. Terdapat signage Bank BRI sesuai standar dalam kondisi baik (tidak rusak/kotor)</string>
+    <string name="e_3">3. Terdapat portal main entrance berwarna biru pada pintu masuk Banking Hall sesuai standar dalam kondisi baik (tidak rusak/kotor)</string>
+    <string name="e_4">4. Terdapat sign nama UKO di sisi kiri pintu masuk Banking Hall (untuk UKO ritel yang dibuka di tahun 2014, UKO existing yang melaksanakan weekend banking, UKO relokasi/renovasi sticker sign entrance menyatu dengan informasi jam operasional Bank BRI) dalam kondisi baik (terbaca dan tidak rusak)</string>
+    <string name="e_5">5. Terdapat sign plat jam operasional BRI di pintu masuk Banking Hall (bagi UKO yang tidak menggunakan sticker sign entrance yang menyatu dengan jam operasional) dalam kondisi baik (terbaca dan tidak rusak)</string>
+    <string name="e_6">6. Terdapat stiker LPS sesuai desain terbaru di sisi kanan  pintu masuk Banking Hall dalam kondisi baik (terbaca dan tidak rusak)</string>
+    <string name="e_7">7. Dinding kaca luar dalam kondisi baik (tidak rusak atau kotor)</string>
+    <string name="e_8">8. Terdapat sign plat tarik/dorong dalam kondisi baik (terbaca dan tidak rusak)</string>
+    <string name="e_9">9. Dinding luar gedung dalam kondisi bersih, cat tidak mengelupas, dan tidak kusam</string>
+    <string name="e_10">10. Wall Cladding dalam kondisi bersih, tidak kusam, dan terdapat aksen 7 garis orange (bagi UKO yang terdapat wall cladding)</string>
+    <string name="e_11">11. Area parkir, paving block, dan halaman bila ada dalam kondisi bersih dan rapi</string>
+    <string name="e_12">12. Plafond luar gedung dalam kondisi bersih dan tidak rusak</string>
+    <string name="e_13">13. Teras luar di depan pintu masuk Banking Hall dalam kondisi bersih dan tidak terdapat benda-benda lain diluar standar tampilan UKO (khususnya BRI Unit)</string>
+    <string name="e_14">14. Terdapat keset di depan pintu masuk Banking Hall terbuat dari bahan nomad/karet berwarna biru dalam kondisi bersih, rapi, dan layak.</string>
+    <string name="e_15">15. Terdapat tempat sampah tertutup di area luar pintu masuk Banking Hall dari bahan stanless dalam kondisi bersih dan baik</string>
+    <string name="e_16">16. Terdapat tempat payung dalam kondisi bersih dan baik</string>
+    <string name="e_17">17. Pos Satpam dalam kondisi bersih dan rapi (bila ada)</string>
+
+    <!-- kondisi ATM-->
+    <string name="a_1">1. Handle pintu tidak rusak dan tersedia stiker tarik/dorong</string>
+    <string name="a_2">2. Terdapat stiker pintu ATM dalam kondisi baik (tidak mengelupas, tidak kusam/luntur)</string>
+    <string name="a_3">3. Terdapat stiker tata tertib di pintu ruang ATM </string>
+    <string name="a_4">4. Kaca ruang ATM dalam kondisi bersih</string>
+    <string name="a_5">5. Lantai ruang ATM dalam kondisi bersih dan tidak terdapat sampah berserakan</string>
+    <string name="a_6">6. Terdapat AC dalam kondisi dingin dan nyaman</string>
+    <string name="a_7">7. Lampu ruang ATM dalam kondisi berfungsi</string>
+    <string name="a_8">8. Terdapat pengharum ruangan menggunakan mesin otomatis yang berfungsi dengan aroma segar</string>
+    <string name="a_9">9. Terdapat CCTV di ruang ATM dalam kondisi berfungsi</string>
+    <string name="a_10">10. Terdapat tempat sampah dengan bahan stanless steel dalam kondisi bersih</string>
+    <string name="a_11">11. Terdapat informasi lokasi ATM BRI terdekat</string>
+    <string name="a_12">12. Tidak terdapat brosur selain produk BRI di ruang ATM (apabila tersedia tempat brosur)</string>
+    <string name="a_13">13. Terdapat poster produk / kehati-hatian bertransaksi di ruang ATM menggunakan papan acrylic</string>
+    <string name="a_14">14. Terdapat informasi mesin tarik tunai atau setor tarik tunai serta logo jaringan BRI</string>
+    <string name="a_15">15. Mesin ATM/CRM dalam kondisi berfungsi baik untuk transaksi tunai dan non tunai</string>
+    <string name="a_16">16. Struk pada mesin ATM/CRM tersedia</string>
+    <string name="a_17">17. Tidak terdapat benda-benda yang mencurigakan seperti mini camera, ganjalan / alat yang menempel pada cover pinpad, card reader, exit shutter, dll</string>
+    <string name="a_18">18. Booth mesin ATM/CRM dalam kondisi bersih dan tidak terdapat tempelan yang tidak diperlukan</string>
+    <string name="a_19">19. Terdapat informasi / stiker denominasi mata uang</string>
+    <string name="a_20">20. Terdapat stiker top up brizzi pada mesin ATM/CRM (untuk mesin yang sudah bisa top up brizzi)</string>
+    <string name="a_21">21. Terdapat stiker insert card</string>
+    <string name="a_22">22. Terdapat sticker informasi tips aman bertransaksi dan tercantum nomor TID mesin ATM/CRM</string>
+    <string name="a_23">23. Terdapat sticker Bank BRI/Link (ATM merah putih) pada body mesin</string>
+    <string name="a_24">24. Terdapat informasi nomor Call Centre BRI 14017 / 1500017 (tidak terdapat nomor lain / palsu)</string>
+    <string name="a_25">25. Huruf dan angka pada pinpad terlihat jelas dan tidak rusak</string>
+    <string name="a_26">26. Terdapat poster informasi apabila ATM mengalami gangguan atau dalam pemeliharaan sesuai format yang ditentukan dan dipasang menggunakan acrylic gantung atau poster laminating</string>
+
+    <!--banking hall-->
+    //aera dalam banking hall
+    <string name="b_1">1. Terdapat nomor antrian nasabah menggunakan mesin Q-Matic/antrian manual sesuai standar </string>
+    <string name="b_2">2. Terdapat informasi Suku Bunga Dasar Kredit (SBDK) yang up to date di dinding menggunakan papan acrylic</string>
+    <string name="b_3">3. Dinding Banking Hall dalam kondisi bersih dan rapih</string>
+    <string name="b_4">4. Lampu Banking Hall dalam kondisi berfungsi, tidak ada yang rusak</string>
+    <string name="b_5">5. AC berfungsi, terasa dingin dan nyaman</string>
+    <string name="b_6">6. Menggunakan pengharum ruangan mesin otomatis di dinding dan berfungsi dengan baik, tercium harum</string>
+    <string name="b_7">7. Tanaman hidup dalam kondisi segar dan tidak kering</string>
+    <string name="b_8">8. Writing desk dalam kondisi baik (rapi, bersih, tidak rusak) dan form tersedia (WIC dan trasaksi)</string>
+    <string name="b_9">9. Terdapat kalendar duduk pada writing desk dalam kondisi baik (tidak kotor atau robek)</string>
+    <string name="b_10">10. Terdapat ballpoint yang berfungsi dengan baik</string>
+    <string name="b_11">11. Terdapat informasi Agen Brilink terdekat</string>
+    <string name="b_12">12. Terdapat informasi nomor wa/telegram kotak saran digital berbentuk banner atau poster yang ditempel pada dinding menggunakan papan acrylic</string>
+    <string name="b_13">13. Terdapat komitmen antri gratifikasi di dinding banking hall dengan bingkai acrylic</string>
+    <string name="b_14">14. Terdapat poster anti fraud / edukasi kehati-hatian bertransaksi di dinding Banking Hall menggunakan bingkai acrylic</string>
+    <string name="b_15">15. Terdapat TV yang menayangkan materi Brivision yang terupdate</string>
+    <string name="b_16">16. Terdapat kursi tunggu nasabah sesuai standar dalam kondisi baik</string>
+    <string name="b_17">17. Terdapat queuing line dari bahan stanless dengan tali berwarna biru (dapat dimodifikasi dengan menambahkan tempat duduk</string>
+    <string name="b_18">18. Terdapat pemisahan antrian nasabah yang menggunakan e-form dan dengan nominal transaksi tertentu (apabila Teller lebih dari satu)</string>
+    <string name="b_19">19. Terdapat pemisahan antrian nasabah ke CS untuk Quick Service dan Long Service (apabila CS lebih dari dua)</string>
+    <string name="b_20">20. Terdapat informasi suku bunga menggunakan papan suku bunga digital atau ditayangkan dalam layar TV</string>
+    <string name="b_21">21. Toonbank Teller dalam kondisi bersih, rapi, dan tidak rusak</string>
+    <string name="b_22">22. Terdapat portal backdrop Teller dengan elemen estetis motif batik sesuai standar</string>
+    <string name="b_23">23. Terdapat informasi tarif jasa bank yang up to date di toon bank Teller</string>
+    <string name="b_24">24. Terdapat sign stanless pengumuman yang bertuliskan bahwa transaksi tunai harus dihitung oleh Teller dan dipastikan kembali oleh nasabah</string>
+    <string name="b_25">25. Terdapat namedesk Teller dari bahan stanless</string>
+    <string name="b_26">26. Terdapat tempat sampah menggunakan bahan stanless </string>
+    //area teller
+    <string name="b_27">27. Tersedia tanaman hidup dalam kondisi segar dan tidak layu</string>
+    <string name="b_28">28. Tersedia permen di toon bank Teller</string>
+    <string name="b_29">29. Tersedia EDC di toon bank Teller dalam kondisi berfungsi</string>
+    <string name="b_30">30. Perangkat ruang kerja Teller lengkap dan kondisi berfungsi (mesin hitung uang, mesin fotocopy, passbook printer, lampu ultraviolet, panic button, cashier box, kalkulator)</string>
+    <string name="b_31">31. Area ruang kerja Teller dalam kondisi bersih dan rapi (tidak terdapat kertas/berkas berserakan di meja kerja)</string>
+    <string name="b_32">32. Area di bawah meja kerja dan area CPU dalam kondisi rapi, tidak terdapat barang pribadi dan barang lain di area CPU </string>
+    <string name="b_33">33. Meja dan kursi Teller dalam kondisi baik sesuai standar dan desain terupdate</string>
+    <string name="b_34">34. Area meja CS dan tempat duduk nasabah dalam kondisi bersih, rapi, dan tidak rusak</string>
+    <string name="b_35">35. Terdapat backdrop CS yang menggunakan neon box atau acrylic dengan materi komunikasi produk BRI yang up to date</string>
+    <string name="b_36">36. Tersedia take one box untuk menyimpan brosur</string>
+    <string name="b_37">37. Terdapat name desk CS dari bahan stanless dalam kondisi baik</string>
+    <string name="b_38">38. Tersedia tanaman hidup dalam kondisi segar dan tidak layu</string>
+    //area cs
+    <string name="b_39">39. Tersedia ballpoint untuk nasabah dan dalam kondisi berfungsi</string>
+    <string name="b_40">40. Tersedia permen di meja CS</string>
+    <string name="b_41">41. Terdapat kalendar duduk di meja CS dalam kondisi baik (tidak kotor atau robek)</string>
+    <string name="b_42">42. Perangkat ruang kerja CS lengkap dan kondisi berfungsi (mesin fotocopy, passbook printer, webcam)</string>
+    <string name="b_43">43. Tersedia EDC di meja CS dalam kondisi berfungsi</string>
+    <string name="b_44">44. Area di bawah meja kerja dan area CPU dalam kondisi rapi, tidak terdapat barang pribadi dan barang lain di area CPU</string>
+
+    <!-- toilet -->
+    <string name="t_1">1. Terdapat signage petunjuk arah menuju toilet yang mudah terbaca oleh nasabah</string>
+    <string name="t_2">2. Pintu dan kunci toilet dalam kondisi baik dan tidak rusak</string>
+    <string name="t_3">3. Ruangan toilet dalam kondisi bersih, harum, dan kering (apabila toilet kering)</string>
+    <string name="t_4">4. Westafel dan closet bersih</string>
+    <string name="t_5">5. Cermin bersih dan bening</string>
+    <string name="t_6">6. Keran air berfungsi dengan baik</string>
+    <string name="t_7">7. Sabun cair dan tissue tersedia</string>
+    <string name="t_8">8. Terdapat pengharum ruangan otomatis dan tercium harum</string>
+    <string name="t_9">9. Tidak terdapat alat kebersihan/pribadi (pel, sikat gigi, gel rambut, dll) di dalam toilet</string>
+
+    <!-- Ruang Arsip, kerja & Pantry -->
+    <string name="r_1">1. Terdapat ruang khusus untuk arsip dokumen berharga</string>
+    <string name="r_2">2. Arsip pada ruang arsip tertata dengan rapi dan tidak berantakan</string>
+    <string name="r_3">3. Ruang arsip memiliki pintu dan kunci yang berfungsi dengan baik</string>
+    <string name="r_4">4. Tersedia lemari arsip untuk penyimpanan dokumen kerja pekerja</string>
+    <string name="r_5">5. Meja pekerja tertata rapi,  bebas debu, tidak ada dokumen berserakan di ruang kerja saat jam kerja</string>
+    <string name="r_6">6. Terdapat tempat sampah yang cukup di area ruang kerja dan dalam kondisi bersih</string>
+    <string name="r_7">7. Ketika pekerja meninggalkan meja kerja dalam waktu lama atau ketika pulang kantor, maka meja kerja bersih dari file</string>
+    <string name="r_8">8. Tidak ada peralatan dengan logo bank lain yang dapat dilihat dengan jelas  di meja kerja (mug, notes, pulpen, dll)</string>
+    <string name="r_9">9. Tidak ada tempelan post it dalam jumlah banyak (maksimum 3) di monitor PC atau partisi meja kerja</string>
+    <string name="r_10">10. Barang-barang pribadi tidak mendominasi space (>20%) dari space yang ada di atas/bawa meja kerja</string>
+    <string name="r_11">11. Tidak terdapat dus, maka dus tertata dengan rapi dan diletakkan pada tempat yang tidak menyolok.  Bila terdapat sepatu cadangan maka disimpan dalam dus</string>
+    <string name="r_12">12. Perlengkapan masak dan makan di pantry disusun dengan baik dan rapi</string>
+    <string name="r_13">13. Pantry dalam kondisi yang bersih dan sampah tidak berserakan</string>
+    <string name="r_14">14. Dinding pantri tidak kotor, kusam dan cat tidak terkelupas</string>
+    <string name="login">LOGIN</string>
+    <string name="belum_punya_akun">Belum punya akun!</string>
+    <string name="register">Register</string>
+    <string name="full_name">Full Name</string>
+    <string name="confrim_password">Confrim Password</string>
+    <string name="password">Password</string>
+    <string name="username">Username</string>
+    <string name="unit_kerja">Unit Kerja</string>
+    <string name="jabatan">Jabatan</string>
+    <string name="email">Email</string>
+    <string name="laporan">Laporan Monitoring :</string>
+    <string name="hasil">Hasil Premises :</string>
+    <string name="tanggal">Tanggal :</string>
+
+</resources>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:id="@+id/toolbarKC">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="?attr/actionBarSize"
+        android:background="@color/color_utama">
+
+        <ImageView
+            android:id="@+id/back_kc"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/ic_baseline_arrow_back_24"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"/>
+
+        <TextView
+            android:id="@+id/kc"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="16dp"
+            android:layout_toRightOf="@id/back_kc"
+            android:text="KC"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+       <!-- <ImageView
+            android:id="@+id/fileKC"
+            android:layout_width="25dp"
+            android:layout_height="25dp"
+            android:src="@drawable/files"
+            android:layout_toRightOf="@id/kc"
+            android:layout_centerVertical="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginLeft="260dp"/>-->
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/background"
+    tools:context=".ActivityAbout">
+
+    <include layout="@layout/toolbar_about"/>
+
+    <RelativeLayout
+        android:id="@+id/lyt_email"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/toolbarAbout"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/txt_bantuan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Ada Masalah? Silahkan hubungi kami"
+            android:textColor="@color/black"
+            android:textStyle="bold"
+            android:fontFamily="@font/mmedium"
+            android:textSize="18dp"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="20dp"/>
+        <LinearLayout
+            android:id="@+id/btn_email"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/background_shape"
+            android:layout_below="@id/txt_bantuan"
+            android:layout_marginTop="20dp"
+            android:layout_margin="30dp"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:src="@drawable/email_blue"
+                android:layout_gravity="center"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Email"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:textColor="@color/color_utama"
+                android:layout_marginLeft="12dp"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/lyt_telepon"
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:layout_marginTop="2dp"
+        android:layout_below="@+id/lyt_email"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/btn_telepon"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            android:layout_marginBottom="30dp"
+            android:background="@drawable/background_shape"
+            android:gravity="center">
+
+            <ImageView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_gravity="center"
+                android:src="@drawable/ic_telephone" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="12dp"
+                android:text="Telepon"
+                android:textColor="@color/color_utama"
+                android:textSize="18sp"
+                android:textStyle="bold" />
+
+        </LinearLayout>
+    </RelativeLayout>
+
+</RelativeLayout>
