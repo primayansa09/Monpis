@@ -14,13 +14,15 @@
         <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/activity_register.xml" value="0.2" />
         <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/alert_dialog.xml" value="0.2" />
         <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/content_register.xml" value="0.17" />
-        <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/fragment_a_t_m.xml" value="0.17" />
-        <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/fragment_banking_hall.xml" value="0.19166666666666668" />
-        <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/fragment_eksterior.xml" value="0.1" />
+        <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/fragment_a_t_m.xml" value="0.12348993288590604" />
+        <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/fragment_arsip_pantry_kerja.xml" value="0.16" />
+        <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/fragment_banking_hall.xml" value="0.12" />
+        <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/fragment_eksterior.xml" value="0.12" />
         <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/fragment_kc.xml" value="0.19166666666666668" />
         <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/fragment_kcp.xml" value="0.19166666666666668" />
         <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/fragment_kcp_parkir.xml" value="0.19166666666666668" />
         <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/fragment_parkir.xml" value="0.19166666666666668" />
+        <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/fragment_toilet.xml" value="0.19166666666666668" />
         <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/item_row_kc.xml" value="0.19166666666666668" />
         <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/toolbar_layout_filekc.xml" value="0.19166666666666668" />
         <entry key="..\:/KAMPUS/monpis/app/src/main/res/layout/toolbar_layoutkc.xml" value="0.19166666666666668" />

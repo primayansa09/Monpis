@@ -62,12 +62,14 @@ public class ArsipPantryKerjaFragment extends Fragment implements View.OnClickLi
                     rdGroup11, rdGroup12, rdGroup13, rdGroup14;
     private RadioButton rdButton1, rdButton2, rdButton3, rdButton4, rdButton5, rdButton6, rdButton7, rdButton8, rdButton9,
             rdButton10, rdButton11, rdButton12, rdButton13, rdButton14;
+    private RadioButton mStandar1, mStandar2, mStandar3, mStandar4, mStandar5, mStandar6, mStandar7, mStandar8, mStandar9,
+            mStandar10, mStandar11, mStandar12, mStandar13, mStandar14;
     private String mParam1;
     private String mParam2, encodeBitmapString1, encodeBitmapString2, encodeBitmapString3, encodeBitmapString4, encodeBitmapString5,
             encodeBitmapString6, encodeBitmapString7, encodeBitmapString8, encodeBitmapString9, encodeBitmapString10, encodeBitmapString11, encodeBitmapString12,
             encodeBitmapString13, encodeBitmapString14;
     private Button btnSave;
-    private TextView kodeUker;
+    private TextView kodeUker, mHasil;
     private ProgressDialog progressDialog;
     private ImageView cRuang1, cRuang2, cRuang3, cRuang4, cRuang5, cRuang6, cRuang7, cRuang8, cRuang9, cRuang10, cRuang11,
             cRuang12, cRuang13, cRuang14;
@@ -133,40 +135,41 @@ public class ArsipPantryKerjaFragment extends Fragment implements View.OnClickLi
         cRuang13 = view.findViewById(R.id.camera_ruang13);
         cRuang14 = view.findViewById(R.id.camera_ruang14);
 
-        rdGroup1 = view.findViewById(R.id.btn_pilihruang1);
-        rdGroup2 = view.findViewById(R.id.btn_pilihruang2);
-        rdGroup3 = view.findViewById(R.id.btn_pilihruang3);
-        rdGroup4 = view.findViewById(R.id.btn_pilihruang4);
-        rdGroup5 = view.findViewById(R.id.btn_pilihruang5);
-        rdGroup6 = view.findViewById(R.id.btn_pilihruang6);
-        rdGroup7 = view.findViewById(R.id.btn_pilihruang7);
-        rdGroup8 = view.findViewById(R.id.btn_pilihruang8);
-        rdGroup9 = view.findViewById(R.id.btn_pilihruang9);
-        rdGroup10 = view.findViewById(R.id.btn_pilihruang10);
-        rdGroup11 = view.findViewById(R.id.btn_pilihruang11);
-        rdGroup12 = view.findViewById(R.id.btn_pilihruang12);
-        rdGroup13 = view.findViewById(R.id.btn_pilihruang13);
-        rdGroup14 = view.findViewById(R.id.btn_pilihruang14);
+        rdGroup1 = view.findViewById(R.id.rg_pilihruang1);
+        rdGroup2 = view.findViewById(R.id.rg_pilihruang2);
+        rdGroup3 = view.findViewById(R.id.rg_pilihruang3);
+        rdGroup4 = view.findViewById(R.id.rg_pilihruang4);
+        rdGroup5 = view.findViewById(R.id.rg_pilihruang5);
+        rdGroup6 = view.findViewById(R.id.rg_pilihruang6);
+        rdGroup7 = view.findViewById(R.id.rg_pilihruang7);
+        rdGroup8 = view.findViewById(R.id.rg_pilihruang8);
+        rdGroup9 = view.findViewById(R.id.rg_pilihruang9);
+        rdGroup10 = view.findViewById(R.id.rg_pilihruang10);
+        rdGroup11 = view.findViewById(R.id.rg_pilihruang11);
+        rdGroup12 = view.findViewById(R.id.rg_pilihruang12);
+        rdGroup13 = view.findViewById(R.id.rg_pilihruang13);
+        rdGroup14 = view.findViewById(R.id.rg_pilihruang14);
 
-        imgRuang1 = view.findViewById(R.id.img_ruang1);
-        imgRuang2 = view.findViewById(R.id.img_ruang2);
-        imgRuang3 = view.findViewById(R.id.img_ruang3);
-        imgRuang4 = view.findViewById(R.id.img_ruang4);
-        imgRuang5 = view.findViewById(R.id.img_ruang5);
-        imgRuang6 = view.findViewById(R.id.img_ruang6);
-        imgRuang7 = view.findViewById(R.id.img_ruang7);
-        imgRuang8 = view.findViewById(R.id.img_ruang8);
-        imgRuang9 = view.findViewById(R.id.img_ruang9);
-        imgRuang10 = view.findViewById(R.id.img_ruang10);
-        imgRuang11 = view.findViewById(R.id.img_ruang11);
-        imgRuang12 = view.findViewById(R.id.img_ruang12);
-        imgRuang13 = view.findViewById(R.id.img_ruang13);
-        imgRuang14 = view.findViewById(R.id.img_ruang14);
+        imgRuang1 = view.findViewById(R.id.img_ruang1); mStandar1 = view.findViewById(R.id.rb_standarRuang1);
+        imgRuang2 = view.findViewById(R.id.img_ruang2); mStandar2 = view.findViewById(R.id.rb_standarRuang2);
+        imgRuang3 = view.findViewById(R.id.img_ruang3); mStandar3 = view.findViewById(R.id.rb_standarRuang3);
+        imgRuang4 = view.findViewById(R.id.img_ruang4); mStandar4 = view.findViewById(R.id.rb_standarRuang4);
+        imgRuang5 = view.findViewById(R.id.img_ruang5); mStandar5 = view.findViewById(R.id.rb_standarRuang5);
+        imgRuang6 = view.findViewById(R.id.img_ruang6); mStandar6 = view.findViewById(R.id.rb_standarRuang6);
+        imgRuang7 = view.findViewById(R.id.img_ruang7); mStandar7 = view.findViewById(R.id.rb_standarRuang7);
+        imgRuang8 = view.findViewById(R.id.img_ruang8); mStandar8 = view.findViewById(R.id.rb_standarRuang8);
+        imgRuang9 = view.findViewById(R.id.img_ruang9); mStandar9 = view.findViewById(R.id.rb_standarRuang9);
+        imgRuang10 = view.findViewById(R.id.img_ruang10); mStandar10 = view.findViewById(R.id.rb_standarRuang10);
+        imgRuang11 = view.findViewById(R.id.img_ruang11); mStandar11 = view.findViewById(R.id.rb_standarRuang11);
+        imgRuang12 = view.findViewById(R.id.img_ruang12); mStandar12 = view.findViewById(R.id.rb_standarRuang12);
+        imgRuang13 = view.findViewById(R.id.img_ruang13); mStandar13 = view.findViewById(R.id.rb_standarRuang13);
+        imgRuang14 = view.findViewById(R.id.img_ruang14); mStandar14 = view.findViewById(R.id.rb_standarRuang14);
 
         progressDialog = new ProgressDialog(ArsipPantryKerjaFragment.this.getContext());
         btnSave = view.findViewById(R.id.btn_saveRuangKC);
         btnSave.setOnClickListener(this);
 
+        mHasil = view.findViewById(R.id.hasil_monitoring);
         kodeUker = view.findViewById(R.id.name6);
         KC data = getActivity().getIntent().getParcelableExtra(KODE_UKER6);
         String name = data.getKCname();
@@ -576,6 +579,48 @@ public class ArsipPantryKerjaFragment extends Fragment implements View.OnClickLi
             case R.id.btn_saveRuangKC:
                 UploadImage();
                 btnSave.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.anim_item));
+
+                if (rdButton1 == mStandar1 && rdButton2 == mStandar2 && rdButton3 == mStandar3 && rdButton4 == mStandar4 && rdButton5 == mStandar5 && rdButton6 == mStandar6 &&
+                    rdButton7 == mStandar7 && rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                    rdButton13 == mStandar13 && rdButton14 == mStandar14){
+                    mHasil.setText("100%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 == mStandar3 && rdButton4 == mStandar4 && rdButton5 == mStandar5 && rdButton6 == mStandar6 &&
+                        rdButton7 == mStandar7 && rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 == mStandar13 && rdButton14 == mStandar14){
+                    mHasil.setText("90%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 == mStandar5 && rdButton6 == mStandar6 &&
+                        rdButton7 == mStandar7 && rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 == mStandar13 && rdButton14 == mStandar14){
+                    mHasil.setText("80%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 == mStandar7 && rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 == mStandar13 && rdButton14 == mStandar14){
+                    mHasil.setText("70%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 == mStandar13 && rdButton14 == mStandar14){
+                    mHasil.setText("60%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 == mStandar13 && rdButton14 == mStandar14){
+                    mHasil.setText("50%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 == mStandar13 && rdButton14 == mStandar14){
+                    mHasil.setText("40%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 &&
+                        rdButton13 == mStandar13 && rdButton14 == mStandar14){
+                    mHasil.setText("30%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 &&
+                        rdButton13 != mStandar13 && rdButton14 == mStandar14){
+                    mHasil.setText("20%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 &&
+                        rdButton13 != mStandar13 && rdButton14 != mStandar14){
+                    mHasil.setText("0%");
+                }
                 break;
         }
     }

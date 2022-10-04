@@ -148,21 +148,23 @@
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
             android:layout_below="@id/rg_pilihHall2"/>
+
         <LinearLayout
             android:id="@+id/lyt_hall_kc3"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:gravity="center"
-            android:layout_marginEnd="16dp"
+            android:layout_below="@id/rg_pilihHall2"
             android:layout_marginTop="10dp"
+            android:layout_marginEnd="16dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/tv_hall3"
-            android:layout_below="@id/rg_pilihHall2">
+            android:gravity="center">
+
             <ImageView
                 android:id="@+id/camera_hall3"
                 android:layout_width="25dp"
                 android:layout_height="25dp"
-                android:src="@drawable/ic_camera"/>
+                android:src="@drawable/ic_camera" />
         </LinearLayout>
 
 
@@ -2747,6 +2749,27 @@
                 android:text="@string/tidak_standar"/>
         </RadioGroup>
 
+        <TextView
+            android:id="@+id/txt_hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg_pilihHall44"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/hasil"/>
+
+        <TextView
+            android:id="@+id/hasil_monitoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg_pilihHall44"
+            android:layout_toRightOf="@+id/txt_hasil"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
+
         <Button
             android:id="@+id/btn_saveHallKC"
             android:layout_width="wrap_content"
@@ -2756,7 +2779,7 @@
             android:layout_marginLeft="100dp"
             android:layout_marginRight="100dp"
             android:layout_marginBottom="20dp"
-            android:layout_below="@+id/rg_pilihHall44"
+            android:layout_below="@+id/hasil_monitoring"
             android:text="Save"
             android:textSize="16sp"
             android:textStyle="bold"/>

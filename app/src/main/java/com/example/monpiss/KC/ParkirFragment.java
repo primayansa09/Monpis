@@ -54,7 +54,7 @@ public class ParkirFragment extends Fragment implements View.OnClickListener {
 
     private String encodeImageString1, encodeImageString2, encodeImageString3;
     private RadioButton rdButton1, rdButton2, rdButton3;
-    private RadioButton mStandar1, mStandar2, mStandar3, mTidakStandar1, mTidakStandar2, mTidakStandar3;
+    private RadioButton mStandar1, mStandar2, mStandar3;
     private RadioGroup rdGroup1, rdGroup2, rdGroup3;
     private Button btnSave;
     private ImageView btnCamera1, imgParkirKc1, btnCamera2, imgParkirKc2, btnCamera3, imgParkirKc3;
@@ -104,9 +104,6 @@ public class ParkirFragment extends Fragment implements View.OnClickListener {
         mStandar1 = view.findViewById(R.id.rb_standarParkir1);
         mStandar2 = view.findViewById(R.id.rb_standarParkir2);
         mStandar3 = view.findViewById(R.id.rb_standarParkir3);
-        mTidakStandar1 = view.findViewById(R.id.rb_tidakStandarparkir1);
-        mTidakStandar2 = view.findViewById(R.id.rb_tidakStandarparkir2);
-        mTidakStandar3 = view.findViewById(R.id.rb_tidakStandarparkir3);
         mHasil = view.findViewById(R.id.hasil_monitoring);
 
         imgParkirKc1 = view.findViewById(R.id.img_parkir1);
@@ -219,19 +216,19 @@ public class ParkirFragment extends Fragment implements View.OnClickListener {
 
                 if (rdButton1 == mStandar1 && rdButton2 == mStandar2 && rdButton3 == mStandar3){
                     mHasil.setText("100%");
-                }else if (rdButton1 == mTidakStandar1 && rdButton2 == mStandar2 && rdButton3 == mStandar3){
+                }else if (rdButton1 != mStandar1 && rdButton2 == mStandar2 && rdButton3 == mStandar3){
                     mHasil.setText("70%");
-                }else if (rdButton1 == mStandar1 && rdButton2 == mTidakStandar2 && rdButton3 == mStandar3){
+                }else if (rdButton1 == mStandar1 && rdButton2 != mStandar2 && rdButton3 == mStandar3){
                     mHasil.setText("70%");
-                }else if (rdButton1 == mStandar1 && rdButton2 == mStandar2 && rdButton3 == mTidakStandar3){
+                }else if (rdButton1 == mStandar1 && rdButton2 == mStandar2 && rdButton3 != mStandar3){
                     mHasil.setText("70%");
-                }else if (rdButton1 == mStandar1 && rdButton2 == mTidakStandar2 && rdButton3 == mTidakStandar3){
+                }else if (rdButton1 == mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3){
                     mHasil.setText("40%");
-                }else if (rdButton1 == mTidakStandar1 && rdButton2 == mStandar2 && rdButton3 == mTidakStandar3){
+                }else if (rdButton1 != mStandar3 && rdButton2 == mStandar2 && rdButton3 != mStandar3){
                     mHasil.setText("40%");
-                }else if (rdButton1 == mTidakStandar1 && rdButton2 == mTidakStandar2 && rdButton3 == mStandar3){
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 == mStandar3){
                     mHasil.setText("40%");
-                }else if (rdButton1 == mTidakStandar1 && rdButton2 == mTidakStandar2 && rdButton3 == mTidakStandar3){
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3){
                     mHasil.setText("0%");
                 } else {
                     mHasil.setText("");

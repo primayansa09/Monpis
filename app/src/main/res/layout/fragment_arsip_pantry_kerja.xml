@@ -67,7 +67,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang1"
+            android:id="@+id/rg_pilihruang1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang1"
@@ -76,12 +76,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang1"
+                android:id="@+id/rb_standarRuang1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang1"
+                android:id="@+id/rb_tidakStandarRuang1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -97,7 +97,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihruang1"/>
+            android:layout_below="@id/rg_pilihruang1"/>
         <LinearLayout
             android:id="@+id/lyt_arsip_kc2"
             android:layout_width="match_parent"
@@ -107,7 +107,7 @@
             android:layout_marginBottom="10dp"
             android:layout_marginEnd="16dp"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/btn_pilihruang1">
+            android:layout_below="@id/rg_pilihruang1">
             <ImageView
                 android:id="@+id/camera_ruang2"
                 android:layout_width="25dp"
@@ -128,7 +128,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang2"
+            android:id="@+id/rg_pilihruang2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang2"
@@ -137,12 +137,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang2"
+                android:id="@+id/rb_standarRuang2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang2"
+                android:id="@+id/rb_tidakStandarRuang2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -158,7 +158,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihruang2"/>
+            android:layout_below="@id/rg_pilihruang2"/>
         <LinearLayout
             android:id="@+id/lyt_arsip_kc3"
             android:layout_width="match_parent"
@@ -168,7 +168,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/tv_ruang3"
-            android:layout_below="@id/btn_pilihruang2">
+            android:layout_below="@id/rg_pilihruang2">
             <ImageView
                 android:id="@+id/camera_ruang3"
                 android:layout_width="25dp"
@@ -189,7 +189,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang3"
+            android:id="@+id/rg_pilihruang3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang3"
@@ -198,12 +198,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang3"
+                android:id="@+id/rb_standarRuang3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang3"
+                android:id="@+id/rb_tidakStandarRuang3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -219,7 +219,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihruang3"/>
+            android:layout_below="@id/rg_pilihruang3"/>
         <LinearLayout
             android:id="@+id/lyt_arsip_kc4"
             android:layout_width="match_parent"
@@ -229,7 +229,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/tv_ruang4"
-            android:layout_below="@id/btn_pilihruang3">
+            android:layout_below="@id/rg_pilihruang3">
             <ImageView
                 android:id="@+id/camera_ruang4"
                 android:layout_width="25dp"
@@ -250,7 +250,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang4"
+            android:id="@+id/rg_pilihruang4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang4"
@@ -259,12 +259,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang4"
+                android:id="@+id/rb_standarRuang4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang4"
+                android:id="@+id/rb_tidakStandarRuang4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -275,7 +275,7 @@
             android:layout_height="1dp"
             android:orientation="horizontal"
             android:background="@color/greylist"
-            android:layout_below="@id/btn_pilihruang4"
+            android:layout_below="@id/rg_pilihruang4"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"></LinearLayout>
         <TextView
@@ -330,7 +330,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang5"
+            android:id="@+id/rg_pilihruang5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang5"
@@ -339,12 +339,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang5"
+                android:id="@+id/rb_standarRuang5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang5"
+                android:id="@+id/rb_tidakStandarRuang5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -360,7 +360,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihruang5"/>
+            android:layout_below="@id/rg_pilihruang5"/>
         <LinearLayout
             android:id="@+id/lyt_arsip_kc6"
             android:layout_width="match_parent"
@@ -370,7 +370,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/tv_ruang6"
-            android:layout_below="@id/btn_pilihruang5">
+            android:layout_below="@id/rg_pilihruang5">
             <ImageView
                 android:id="@+id/camera_ruang6"
                 android:layout_width="25dp"
@@ -391,7 +391,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang6"
+            android:id="@+id/rg_pilihruang6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang6"
@@ -400,12 +400,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang6"
+                android:id="@+id/rb_standarRuang6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang6"
+                android:id="@+id/rb_tidakStandarRuang6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -421,7 +421,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihruang6"/>
+            android:layout_below="@id/rg_pilihruang6"/>
         <LinearLayout
             android:id="@+id/lyt_arsip_kc7"
             android:layout_width="match_parent"
@@ -431,7 +431,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/tv_ruang7"
-            android:layout_below="@id/btn_pilihruang6">
+            android:layout_below="@id/rg_pilihruang6">
             <ImageView
                 android:id="@+id/camera_ruang7"
                 android:layout_width="25dp"
@@ -452,7 +452,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang7"
+            android:id="@+id/rg_pilihruang7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang7"
@@ -461,12 +461,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang7"
+                android:id="@+id/rb_standarRuang7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang7"
+                android:id="@+id/rb_tidakStandarRuang7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -482,7 +482,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihruang7"/>
+            android:layout_below="@id/rg_pilihruang7"/>
         <LinearLayout
             android:id="@+id/lyt_arsip_kc8"
             android:layout_width="match_parent"
@@ -492,7 +492,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/tv_ruang8"
-            android:layout_below="@id/btn_pilihruang7">
+            android:layout_below="@id/rg_pilihruang7">
 
             <ImageView
                 android:id="@+id/camera_ruang8"
@@ -514,7 +514,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang8"
+            android:id="@+id/rg_pilihruang8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang8"
@@ -523,12 +523,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang8"
+                android:id="@+id/rb_standarRuang8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang8"
+                android:id="@+id/rb_tidakStandarRuang8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -544,7 +544,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihruang8"/>
+            android:layout_below="@id/rg_pilihruang8"/>
         <LinearLayout
             android:id="@+id/lyt_arsip_kc9"
             android:layout_width="match_parent"
@@ -554,7 +554,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/tv_ruang9"
-            android:layout_below="@id/btn_pilihruang8">
+            android:layout_below="@id/rg_pilihruang8">
             <ImageView
                 android:id="@+id/camera_ruang9"
                 android:layout_width="25dp"
@@ -575,7 +575,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang9"
+            android:id="@+id/rg_pilihruang9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang9"
@@ -584,12 +584,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang9"
+                android:id="@+id/rb_standarRuang9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang9"
+                android:id="@+id/rb_tidakStandarRuang9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -605,7 +605,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihruang9"/>
+            android:layout_below="@id/rg_pilihruang9"/>
         <LinearLayout
             android:id="@+id/lyt_arsip_kc10"
             android:layout_width="match_parent"
@@ -615,7 +615,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/tv_ruang10"
-            android:layout_below="@id/btn_pilihruang9">
+            android:layout_below="@id/rg_pilihruang9">
             <ImageView
                 android:id="@+id/camera_ruang10"
                 android:layout_width="25dp"
@@ -636,7 +636,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang10"
+            android:id="@+id/rg_pilihruang10"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang10"
@@ -645,12 +645,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang10"
+                android:id="@+id/rb_standarRuang10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang10"
+                android:id="@+id/rb_tidakStandarRuang10"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -666,7 +666,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihruang10"/>
+            android:layout_below="@id/rg_pilihruang10"/>
         <LinearLayout
             android:id="@+id/lyt_arsip_kc11"
             android:layout_width="match_parent"
@@ -676,7 +676,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/tv_ruang11"
-            android:layout_below="@id/btn_pilihruang10">
+            android:layout_below="@id/rg_pilihruang10">
             <ImageView
                 android:id="@+id/camera_ruang11"
                 android:layout_width="25dp"
@@ -697,7 +697,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang11"
+            android:id="@+id/rg_pilihruang11"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang11"
@@ -706,12 +706,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang11"
+                android:id="@+id/rb_standarRuang11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang11"
+                android:id="@+id/rb_tidakStandarRuang11"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -722,7 +722,7 @@
             android:layout_height="1dp"
             android:orientation="horizontal"
             android:background="@color/greylist"
-            android:layout_below="@id/btn_pilihruang11"
+            android:layout_below="@id/rg_pilihruang11"
             android:layout_marginTop="5dp"
             android:layout_marginBottom="5dp"></LinearLayout>
         <TextView
@@ -746,7 +746,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihruang11"/>
+            android:layout_below="@id/rg_pilihruang11"/>
         <LinearLayout
             android:id="@+id/lyt_arsip_kc12"
             android:layout_width="match_parent"
@@ -756,7 +756,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/tv_ruang12"
-            android:layout_below="@id/btn_pilihruang11">
+            android:layout_below="@id/rg_pilihruang11">
             <ImageView
                 android:id="@+id/camera_ruang12"
                 android:layout_width="25dp"
@@ -777,7 +777,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang12"
+            android:id="@+id/rg_pilihruang12"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang12"
@@ -786,12 +786,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang12"
+                android:id="@+id/rb_standarRuang12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang12"
+                android:id="@+id/rb_tidakStandarRuang12"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -807,7 +807,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihruang12"/>
+            android:layout_below="@id/rg_pilihruang12"/>
         <LinearLayout
             android:id="@+id/lyt_arsip_kc13"
             android:layout_width="match_parent"
@@ -817,7 +817,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/tv_ruang13"
-            android:layout_below="@id/btn_pilihruang12">
+            android:layout_below="@id/rg_pilihruang12">
             <ImageView
                 android:id="@+id/camera_ruang13"
                 android:layout_width="25dp"
@@ -838,7 +838,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang13"
+            android:id="@+id/rg_pilihruang13"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang13"
@@ -847,12 +847,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang13"
+                android:id="@+id/rb_standarRuang13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang13"
+                android:id="@+id/rb_tidakStandarRuang13"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -868,7 +868,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihruang13"/>
+            android:layout_below="@id/rg_pilihruang13"/>
         <LinearLayout
             android:id="@+id/lyt_arsip_kc14"
             android:layout_width="match_parent"
@@ -878,7 +878,7 @@
             android:layout_marginTop="10dp"
             android:layout_marginBottom="10dp"
             android:layout_toRightOf="@id/tv_ruang14"
-            android:layout_below="@id/btn_pilihruang13">
+            android:layout_below="@id/rg_pilihruang13">
             <ImageView
                 android:id="@+id/camera_ruang14"
                 android:layout_width="25dp"
@@ -899,7 +899,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihruang14"
+            android:id="@+id/rg_pilihruang14"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_ruang14"
@@ -909,16 +909,37 @@
             android:layout_marginBottom="20dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standarRuang14"
+                android:id="@+id/rb_standarRuang14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/btn_tidakStandarRuang14"
+                android:id="@+id/rb_tidakStandarRuang14"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
         </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg_pilihruang14"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/hasil"/>
+
+        <TextView
+            android:id="@+id/hasil_monitoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg_pilihruang14"
+            android:layout_toRightOf="@+id/txt_hasil"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btn_saveRuangKC"
@@ -929,7 +950,7 @@
             android:layout_marginLeft="100dp"
             android:layout_marginRight="100dp"
             android:layout_marginBottom="20dp"
-            android:layout_below="@id/btn_pilihruang14"
+            android:layout_below="@id/txt_hasil"
             android:text="Save"
             android:textSize="16sp"
             android:textStyle="bold"/>

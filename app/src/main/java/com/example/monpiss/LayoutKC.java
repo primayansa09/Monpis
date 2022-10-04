@@ -41,8 +41,10 @@ public class LayoutKC extends AppCompatActivity implements View.OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_layout_kc);
 
+        imgFile = findViewById(R.id.fileKC);
         btnback = findViewById(R.id.back_kc);
         btnback.setOnClickListener(this);
+        imgFile.setOnClickListener(this);
 
         KCPagerAdapter kcPagerAdapter = new KCPagerAdapter(this);
         ViewPager2 viewPager2 = findViewById(R.id.viewpager_kc);
@@ -93,6 +95,9 @@ public class LayoutKC extends AppCompatActivity implements View.OnClickListener 
             case R.id.back_kc:
                 showAlertDialog();
                 break;
+            case R.id.fileKC:
+                Intent file = new Intent(LayoutKC.this, ActivityFileKC.class);
+                startActivity(file);
         }
     }
 

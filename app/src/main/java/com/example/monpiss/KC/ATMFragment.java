@@ -60,6 +60,9 @@ public class ATMFragment extends Fragment implements View.OnClickListener {
             rdButton11, rdButton12, rdButton13, rdButton14, rdButton15, rdButton16, rdButton17, rdButton18, rdButton19, rdButton20, rdButton21,
             rdButton22, rdButton23, rdButton24, rdButton25, rdButton26;
 
+    private RadioButton mStandar1, mStandar2, mStandar3, mStandar4, mStandar5, mStandar6, mStandar7, mStandar8, mStandar9, mStandar10, mStandar11,
+            mStandar12, mStandar13, mStandar14, mStandar15, mStandar16, mStandar17, mStandar18, mStandar19, mStandar20, mStandar21, mStandar22, mStandar23, mStandar24, mStandar25, mStandar26;
+
     private String encodeImageString1, encodeImageString2, encodeImageString3, encodeImageString4, encodeImageString5, encodeImageString6, encodeImageString7,
             encodeImageString8, encodeImageString9, encodeImageString10, encodeImageString11, encodeImageString12, encodeImageString13, encodeImageString14, encodeImageString15, encodeImageString16,
             encodeImageString17, encodeImageString18, encodeImageString19, encodeImageString20, encodeImageString21, encodeImageString22, encodeImageString23, encodeImageString24,
@@ -73,7 +76,7 @@ public class ATMFragment extends Fragment implements View.OnClickListener {
             imgAtmKc11, imgAtmKc12, imgAtmKc13, imgAtmKc14, imgAtmKc15, imgAtmKc16, imgAtmKc17, imgAtmKc18, imgAtmKc19, imgAtmKc20,
             imgAtmKc21, imgAtmKc22, imgAtmKc23, imgAtmKc24, imgAtmKc25, imgAtmKc26;
 
-    private TextView kodeUker;
+    private TextView kodeUker, mHasil;
     private Button btnSave;
     private ProgressDialog progressDialog;
 
@@ -162,6 +165,17 @@ public class ATMFragment extends Fragment implements View.OnClickListener {
             rdGroup9 = view.findViewById(R.id.rg_Atm9); rdGroup19 = view.findViewById(R.id.rg_Atm19);
             rdGroup10 = view.findViewById(R.id.rg_Atm10); rdGroup20 = view.findViewById(R.id.rg_Atm20);
 
+            mStandar1 = view.findViewById(R.id.rb_standarAtm1); mStandar11 = view.findViewById(R.id.rb_standarAtm11); mStandar21 = view.findViewById(R.id.rb_standarAtm21);
+            mStandar2 = view.findViewById(R.id.rb_standarAtm2); mStandar12 = view.findViewById(R.id.rb_standarAtm12); mStandar22 = view.findViewById(R.id.rb_standarAtm22);
+            mStandar3 = view.findViewById(R.id.rb_standarAtm3); mStandar13 = view.findViewById(R.id.rb_standarAtm13); mStandar23 = view.findViewById(R.id.rb_standarAtm23);
+            mStandar4 = view.findViewById(R.id.rb_standarAtm4); mStandar14 = view.findViewById(R.id.rb_standarAtm14); mStandar24 = view.findViewById(R.id.rb_standarAtm24);
+            mStandar5 = view.findViewById(R.id.rb_standarAtm5); mStandar15 = view.findViewById(R.id.rb_standarAtm15); mStandar25 = view.findViewById(R.id.rb_standarAtm25);
+            mStandar6 = view.findViewById(R.id.rb_standarAtm6); mStandar16 = view.findViewById(R.id.rb_standarAtm16); mStandar26 = view.findViewById(R.id.rb_standarAtm26);
+            mStandar7 = view.findViewById(R.id.rb_standarAtm7); mStandar17 = view.findViewById(R.id.rb_standarAtm17);
+            mStandar8 = view.findViewById(R.id.rb_standarAtm8); mStandar18 = view.findViewById(R.id.rb_standarAtm18);
+            mStandar9 = view.findViewById(R.id.rb_standarAtm9); mStandar19 = view.findViewById(R.id.rb_standarAtm19);
+            mStandar10 = view.findViewById(R.id.rb_standarAtm10); mStandar20 = view.findViewById(R.id.rb_standarAtm20);
+
         cAtmKc1.setOnClickListener(this);  cAtmKc11.setOnClickListener(this); cAtmKc21.setOnClickListener(this);
         cAtmKc2.setOnClickListener(this);  cAtmKc12.setOnClickListener(this); cAtmKc22.setOnClickListener(this);
         cAtmKc3.setOnClickListener(this);  cAtmKc13.setOnClickListener(this); cAtmKc23.setOnClickListener(this);
@@ -174,6 +188,7 @@ public class ATMFragment extends Fragment implements View.OnClickListener {
         cAtmKc10.setOnClickListener(this); cAtmKc20.setOnClickListener(this);
 
         kodeUker = view.findViewById(R.id.name3);
+        mHasil = view.findViewById(R.id.hasil_monitoring);
         KC data = getActivity().getIntent().getParcelableExtra(KODE_UKER3);
         String name = data.getKCname();
         kodeUker.setText(name);
@@ -891,6 +906,96 @@ public class ATMFragment extends Fragment implements View.OnClickListener {
                        }).check();
                 break;
             case R.id.btn_saveAtmKC:
+
+                if (rdButton1 == mStandar1 && rdButton2 == mStandar2 && rdButton3 == mStandar3 && rdButton4 == mStandar4 && rdButton5 == mStandar5 && rdButton6 == mStandar6 && rdButton7 == mStandar7 &&
+                    rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 && rdButton13 == mStandar13 && rdButton14 == mStandar14 &&
+                    rdButton15 == mStandar15 && rdButton16 == mStandar16 && rdButton17 == mStandar17 && rdButton18 == mStandar18 && rdButton19 == mStandar19 && rdButton20 == mStandar20 &&
+                    rdButton21 == mStandar21 && rdButton22 == mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("100%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 == mStandar3 && rdButton4 == mStandar4 && rdButton5 == mStandar5 && rdButton6 == mStandar6 && rdButton7 == mStandar7 &&
+                        rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 && rdButton13 == mStandar13 && rdButton14 == mStandar14 &&
+                        rdButton15 == mStandar15 && rdButton16 == mStandar16 && rdButton17 == mStandar17 && rdButton18 == mStandar18 && rdButton19 == mStandar19 && rdButton20 == mStandar20 &&
+                        rdButton21 == mStandar21 && rdButton22 == mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("95%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 == mStandar5 && rdButton6 == mStandar6 && rdButton7 == mStandar7 &&
+                        rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 && rdButton13 == mStandar13 && rdButton14 == mStandar14 &&
+                        rdButton15 == mStandar15 && rdButton16 == mStandar16 && rdButton17 == mStandar17 && rdButton18 == mStandar18 && rdButton19 == mStandar19 && rdButton20 == mStandar20 &&
+                        rdButton21 == mStandar21 && rdButton22 == mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("90%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 == mStandar7 &&
+                        rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 && rdButton13 == mStandar13 && rdButton14 == mStandar14 &&
+                        rdButton15 == mStandar15 && rdButton16 == mStandar16 && rdButton17 == mStandar17 && rdButton18 == mStandar18 && rdButton19 == mStandar19 && rdButton20 == mStandar20 &&
+                        rdButton21 == mStandar21 && rdButton22 == mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("85%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 && rdButton13 == mStandar13 && rdButton14 == mStandar14 &&
+                        rdButton15 == mStandar15 && rdButton16 == mStandar16 && rdButton17 == mStandar17 && rdButton18 == mStandar18 && rdButton19 == mStandar19 && rdButton20 == mStandar20 &&
+                        rdButton21 == mStandar21 && rdButton22 == mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("80%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 && rdButton13 == mStandar13 && rdButton14 == mStandar14 &&
+                        rdButton15 == mStandar15 && rdButton16 == mStandar16 && rdButton17 == mStandar17 && rdButton18 == mStandar18 && rdButton19 == mStandar19 && rdButton20 == mStandar20 &&
+                        rdButton21 == mStandar21 && rdButton22 == mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("75");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 && rdButton13 == mStandar13 && rdButton14 == mStandar14 &&
+                        rdButton15 == mStandar15 && rdButton16 == mStandar16 && rdButton17 == mStandar17 && rdButton18 == mStandar18 && rdButton19 == mStandar19 && rdButton20 == mStandar20 &&
+                        rdButton21 == mStandar21 && rdButton22 == mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("70%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 && rdButton13 != mStandar13 && rdButton14 != mStandar14 &&
+                        rdButton15 == mStandar15 && rdButton16 == mStandar16 && rdButton17 == mStandar17 && rdButton18 == mStandar18 && rdButton19 == mStandar19 && rdButton20 == mStandar20 &&
+                        rdButton21 == mStandar21 && rdButton22 == mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("65%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 && rdButton13 != mStandar13 && rdButton14 != mStandar14 &&
+                        rdButton15 != mStandar15 && rdButton16 != mStandar16 && rdButton17 == mStandar17 && rdButton18 == mStandar18 && rdButton19 == mStandar19 && rdButton20 == mStandar20 &&
+                        rdButton21 == mStandar21 && rdButton22 == mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("60%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 && rdButton13 != mStandar13 && rdButton14 != mStandar14 &&
+                        rdButton15 != mStandar15 && rdButton16 != mStandar16 && rdButton17 != mStandar17 && rdButton18 != mStandar18 && rdButton19 == mStandar19 && rdButton20 == mStandar20 &&
+                        rdButton21 == mStandar21 && rdButton22 == mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("55%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 && rdButton13 != mStandar13 && rdButton14 != mStandar14 &&
+                        rdButton15 != mStandar15 && rdButton16 != mStandar16 && rdButton17 != mStandar17 && rdButton18 != mStandar18 && rdButton19 != mStandar19 && rdButton20 != mStandar20 &&
+                        rdButton21 == mStandar21 && rdButton22 == mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("50%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 && rdButton13 != mStandar13 && rdButton14 != mStandar14 &&
+                        rdButton15 != mStandar15 && rdButton16 != mStandar16 && rdButton17 != mStandar17 && rdButton18 != mStandar18 && rdButton19 != mStandar19 && rdButton20 != mStandar20 &&
+                        rdButton21 != mStandar21 && rdButton22 == mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("45%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 && rdButton13 != mStandar13 && rdButton14 != mStandar14 &&
+                        rdButton15 != mStandar15 && rdButton16 != mStandar16 && rdButton17 != mStandar17 && rdButton18 != mStandar18 && rdButton19 != mStandar19 && rdButton20 != mStandar20 &&
+                        rdButton21 != mStandar21 && rdButton22 != mStandar22 && rdButton23 == mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("40%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 && rdButton13 != mStandar13 && rdButton14 != mStandar14 &&
+                        rdButton15 != mStandar15 && rdButton16 != mStandar16 && rdButton17 != mStandar17 && rdButton18 != mStandar18 && rdButton19 != mStandar19 && rdButton20 != mStandar20 &&
+                        rdButton21 != mStandar21 && rdButton22 != mStandar22 && rdButton23 != mStandar23 && rdButton24 == mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("35%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 && rdButton13 != mStandar13 && rdButton14 != mStandar14 &&
+                        rdButton15 != mStandar15 && rdButton16 != mStandar16 && rdButton17 != mStandar17 && rdButton18 != mStandar18 && rdButton19 != mStandar19 && rdButton20 != mStandar20 &&
+                        rdButton21 != mStandar21 && rdButton22 != mStandar22 && rdButton23 != mStandar23 && rdButton24 != mStandar24 && rdButton25 == mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("30%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 && rdButton13 != mStandar13 && rdButton14 != mStandar14 &&
+                        rdButton15 != mStandar15 && rdButton16 != mStandar16 && rdButton17 != mStandar17 && rdButton18 != mStandar18 && rdButton19 != mStandar19 && rdButton20 != mStandar20 &&
+                        rdButton21 != mStandar21 && rdButton22 != mStandar22 && rdButton23 != mStandar23 && rdButton24 != mStandar24 && rdButton25 != mStandar25 && rdButton26 == mStandar26){
+                    mHasil.setText("20%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 && rdButton7 != mStandar7 &&
+                        rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 && rdButton13 != mStandar13 && rdButton14 != mStandar14 &&
+                        rdButton15 != mStandar15 && rdButton16 != mStandar16 && rdButton17 != mStandar17 && rdButton18 != mStandar18 && rdButton19 != mStandar19 && rdButton20 != mStandar20 &&
+                        rdButton21 != mStandar21 && rdButton22 != mStandar22 && rdButton23 != mStandar23 && rdButton24 != mStandar24 && rdButton25 != mStandar25 && rdButton26 != mStandar26){
+                    mHasil.setText("0%");
+                }else {
+                    mHasil.setText("");
+                }
+
                 uploadImage();
                 btnSave.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.anim_item));
                 break;
@@ -1609,6 +1714,13 @@ public class ATMFragment extends Fragment implements View.OnClickListener {
                 }else {
                     params.put("", rdButton26.toString());
                 }
+
+                if (mHasil != null){
+                    params.put("hasil", mHasil.getText().toString());
+                }else {
+                    params.put("", mHasil.toString());
+                }
+
                 params.put("kode", kodeUker.getText().toString());
                 return params;
                 }

@@ -30,7 +30,7 @@
             android:textColor="@color/white"
             android:textSize="20sp" />
 
-       <!-- <ImageView
+        <ImageView
             android:id="@+id/fileKC"
             android:layout_width="25dp"
             android:layout_height="25dp"
@@ -38,7 +38,7 @@
             android:layout_toRightOf="@id/kc"
             android:layout_centerVertical="true"
             android:layout_alignParentRight="true"
-            android:layout_marginLeft="260dp"/>-->
+            android:layout_marginLeft="260dp"/>
 
     </RelativeLayout>
 

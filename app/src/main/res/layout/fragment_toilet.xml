@@ -56,7 +56,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihToiletKC1"
+            android:id="@+id/rg_pilihToiletKC1"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_toilet1"
@@ -65,12 +65,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standar1"
+                android:id="@+id/rb_standar1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/tbn_tidakStandar1"
+                android:id="@+id/rb_tidakStandar1"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -86,7 +86,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihToiletKC1"/>
+            android:layout_below="@id/rg_pilihToiletKC1"/>
         <LinearLayout
             android:id="@+id/lyt_camera_toilet_kc2"
             android:layout_width="match_parent"
@@ -94,7 +94,7 @@
             android:layout_marginEnd="16dp"
             android:layout_toRightOf="@id/tv_toilet2"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/btn_pilihToiletKC1"
+            android:layout_below="@id/rg_pilihToiletKC1"
             android:gravity="center">
             <ImageView
                 android:id="@+id/camera_toilet2"
@@ -116,7 +116,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihToiletKC2"
+            android:id="@+id/rg_pilihToiletKC2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_toilet2"
@@ -125,12 +125,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standar2"
+                android:id="@+id/rb_standar2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/tbn_tidakStandar2"
+                android:id="@+id/rb_tidakStandar2"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -146,7 +146,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihToiletKC2"/>
+            android:layout_below="@id/rg_pilihToiletKC2"/>
         <LinearLayout
             android:id="@+id/lyt_camera_toilet_kc3"
             android:layout_width="match_parent"
@@ -154,7 +154,7 @@
             android:layout_marginEnd="16dp"
             android:layout_toRightOf="@id/tv_toilet3"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/btn_pilihToiletKC2"
+            android:layout_below="@id/rg_pilihToiletKC2"
             android:gravity="center">
             <ImageView
                 android:id="@+id/camera_toilet3"
@@ -176,7 +176,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihToiletKC3"
+            android:id="@+id/rg_pilihToiletKC3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_toilet3"
@@ -185,12 +185,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standar3"
+                android:id="@+id/rb_standar3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/tbn_tidakStandar3"
+                android:id="@+id/rb_tidakStandar3"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -206,7 +206,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihToiletKC3"/>
+            android:layout_below="@id/rg_pilihToiletKC3"/>
         <LinearLayout
             android:id="@+id/lyt_camera_toilet_kc4"
             android:layout_width="match_parent"
@@ -214,7 +214,7 @@
             android:layout_marginEnd="16dp"
             android:layout_toRightOf="@id/tv_toilet4"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/btn_pilihToiletKC3"
+            android:layout_below="@id/rg_pilihToiletKC3"
             android:gravity="center">
             <ImageView
                 android:id="@+id/camera_toilet4"
@@ -236,7 +236,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihToiletKC4"
+            android:id="@+id/rg_pilihToiletKC4"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_toilet4"
@@ -245,12 +245,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standar4"
+                android:id="@+id/rb_standar4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/tbn_tidakStandar4"
+                android:id="@+id/rb_tidakStandar4"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -266,7 +266,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihToiletKC4"/>
+            android:layout_below="@id/rg_pilihToiletKC4"/>
         <LinearLayout
             android:id="@+id/lyt_camera_toilet_kc5"
             android:layout_width="match_parent"
@@ -274,7 +274,7 @@
             android:layout_marginEnd="16dp"
             android:layout_toRightOf="@id/tv_toilet5"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/btn_pilihToiletKC4"
+            android:layout_below="@id/rg_pilihToiletKC4"
             android:gravity="center">
             <ImageView
                 android:id="@+id/camera_toilet5"
@@ -296,7 +296,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihToiletKC5"
+            android:id="@+id/rg_pilihToiletKC5"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_toilet5"
@@ -305,12 +305,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standar5"
+                android:id="@+id/rb_standar5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/tbn_tidakStandar5"
+                android:id="@+id/rb_tidakStandar5"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -327,7 +327,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihToiletKC5"/>
+            android:layout_below="@id/rg_pilihToiletKC5"/>
         <LinearLayout
             android:id="@+id/lyt_camera_toilet_kc6"
             android:layout_width="match_parent"
@@ -335,7 +335,7 @@
             android:layout_marginEnd="16dp"
             android:layout_toRightOf="@id/tv_toilet6"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/btn_pilihToiletKC5"
+            android:layout_below="@id/rg_pilihToiletKC5"
             android:gravity="center">
             <ImageView
                 android:id="@+id/camera_toilet6"
@@ -357,7 +357,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihToiletKC6"
+            android:id="@+id/rg_pilihToiletKC6"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_toilet6"
@@ -366,12 +366,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standar6"
+                android:id="@+id/rb_standar6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/tbn_tidakStandar6"
+                android:id="@+id/rb_tidakStandar6"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -387,7 +387,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihToiletKC6"/>
+            android:layout_below="@id/rg_pilihToiletKC6"/>
         <LinearLayout
             android:id="@+id/lyt_camera_toilet_kc7"
             android:layout_width="match_parent"
@@ -395,7 +395,7 @@
             android:layout_marginEnd="16dp"
             android:layout_toRightOf="@id/tv_toilet7"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/btn_pilihToiletKC6"
+            android:layout_below="@id/rg_pilihToiletKC6"
             android:gravity="center">
             <ImageView
                 android:id="@+id/camera_toilet7"
@@ -417,7 +417,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihToiletKC7"
+            android:id="@+id/rg_pilihToiletKC7"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_toilet7"
@@ -426,12 +426,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standar7"
+                android:id="@+id/rb_standar7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/tbn_tidakStandar7"
+                android:id="@+id/rb_tidakStandar7"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -447,7 +447,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihToiletKC7"/>
+            android:layout_below="@id/rg_pilihToiletKC7"/>
         <LinearLayout
             android:id="@+id/lyt_camera_toilet_kc8"
             android:layout_width="match_parent"
@@ -455,7 +455,7 @@
             android:layout_marginEnd="16dp"
             android:layout_toRightOf="@id/tv_toilet8"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/btn_pilihToiletKC7"
+            android:layout_below="@id/rg_pilihToiletKC7"
             android:gravity="center">
             <ImageView
                 android:id="@+id/camera_toilet8"
@@ -477,7 +477,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihToiletKC8"
+            android:id="@+id/rg_pilihToiletKC8"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_toilet8"
@@ -486,12 +486,12 @@
             android:layout_marginTop="5dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standar8"
+                android:id="@+id/rb_standar8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/tbn_tidakStandar8"
+                android:id="@+id/rb_tidakStandar8"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
@@ -507,7 +507,7 @@
             android:layout_marginTop="70dp"
             android:layout_marginBottom="10dp"
             android:layout_marginStart="16dp"
-            android:layout_below="@id/btn_pilihToiletKC8"/>
+            android:layout_below="@id/rg_pilihToiletKC8"/>
         <LinearLayout
             android:id="@+id/lyt_camera_toilet_kc9"
             android:layout_width="match_parent"
@@ -515,7 +515,7 @@
             android:layout_marginEnd="16dp"
             android:layout_toRightOf="@id/tv_toilet9"
             android:layout_marginTop="10dp"
-            android:layout_below="@id/btn_pilihToiletKC8"
+            android:layout_below="@id/rg_pilihToiletKC8"
             android:gravity="center">
             <ImageView
                 android:id="@+id/camera_toilet9"
@@ -537,7 +537,7 @@
             android:src="@drawable/ic_image"
             android:background="@drawable/background_list"/>
         <RadioGroup
-            android:id="@+id/btn_pilihToiletKC9"
+            android:id="@+id/rg_pilihToiletKC9"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_below="@id/img_toilet9"
@@ -547,16 +547,37 @@
             android:layout_marginBottom="20dp"
             android:layout_marginEnd="20dp">
             <RadioButton
-                android:id="@+id/btn_standar9"
+                android:id="@+id/rb_standar9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/standar"/>
             <RadioButton
-                android:id="@+id/tbn_tidakStandar9"
+                android:id="@+id/rb_tidakStandar9"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="@string/tidak_standar"/>
         </RadioGroup>
+
+        <TextView
+            android:id="@+id/txt_hasil"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg_pilihToiletKC9"
+            android:layout_marginLeft="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            android:text="@string/hasil"/>
+
+        <TextView
+            android:id="@+id/hasil_monitoring"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/rg_pilihToiletKC9"
+            android:layout_toRightOf="@+id/txt_hasil"
+            android:layout_marginLeft="8dp"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/black"
+            android:textSize="18sp" />
 
         <Button
             android:id="@+id/btn_saveToiletKC"
@@ -567,7 +588,7 @@
             android:layout_marginLeft="100dp"
             android:layout_marginRight="100dp"
             android:layout_marginBottom="20dp"
-            android:layout_below="@id/btn_pilihToiletKC9"
+            android:layout_below="@id/txt_hasil"
             android:text="Save"
             android:textStyle="bold"
             android:textSize="16sp"/>

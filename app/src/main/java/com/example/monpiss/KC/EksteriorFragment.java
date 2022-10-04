@@ -55,6 +55,9 @@ public class EksteriorFragment extends Fragment implements View.OnClickListener 
     private RadioButton rdButton1, rdButton2, rdButton3, rdButton4, rdButton5, rdButton6, rdButton7, rdButton8, rdButton9,
             rdButton10, rdButton11, rdButton12, rdButton13, rdButton14, rdButton15, rdButton16, rdButton17;
 
+    private RadioButton mStandar1, mStandar2, mStandar3, mStandar4, mStandar5, mStandar6, mStandar7, mStandar8, mStandar9, mStandar10,
+            mStandar11, mStandar12, mStandar13, mStandar14, mStandar15, mStandar16, mStandar17;
+
     private String encodeImageString1, encodeImageString2, encodeImageString3, encodeimageString4, encodeImageString5, encodeImageString6, encodeImageString7,
             encodeImageString8, encodeImageString9, encodeImageString10, encodeImageString11, encodeImageString12, encodeImageString13, encodeImageString14, encodeImageString15, encodeImageString16, encodeimageString17 ;
 
@@ -64,7 +67,8 @@ public class EksteriorFragment extends Fragment implements View.OnClickListener 
     private ImageView imgEkstKC1, imgEkstKC2, imgEkstKC3, imgEkstKC4, imgEkstKC5, imgEkstKC6, imgEkstKC7, imgEkstKC8,
             imgEkstKC9, imgEkstKC10, imgEkstKC11,imgEkstKC12, imgEkstKC13,imgEkstKC14, imgEkstKC15, imgEkstKC16, imgEkstKC17;
 
-    private TextView kodeuker;
+
+    private TextView kodeuker, mHasil;
     private Button btnSave;
     private ProgressDialog progressDialog;
 
@@ -114,23 +118,23 @@ public class EksteriorFragment extends Fragment implements View.OnClickListener 
         cEkstKc16 = view.findViewById(R.id.camera_ekst16); rdGroup16 = view.findViewById(R.id.rg_pilihEkst16);
         cEkstKC17 = view.findViewById(R.id.camera_ekst17); rdGroup17 = view.findViewById(R.id.rg_pilihEkst17);
 
-        imgEkstKC1 = view.findViewById(R.id.img_ekst1);
-        imgEkstKC2 = view.findViewById(R.id.img_ekst2);
-        imgEkstKC3 = view.findViewById(R.id.img_ekst3);
-        imgEkstKC4 = view.findViewById(R.id.img_ekst4);
-        imgEkstKC5 = view.findViewById(R.id.img_ekst5);
-        imgEkstKC6 = view.findViewById(R.id.img_ekst6);
-        imgEkstKC7 = view.findViewById(R.id.img_ekst7);
-        imgEkstKC8 = view.findViewById(R.id.img_ekst8);
-        imgEkstKC9 = view.findViewById(R.id.img_ekst9);
-        imgEkstKC10 = view.findViewById(R.id.img_ekst10);
-        imgEkstKC11 = view.findViewById(R.id.img_ekst11);
-        imgEkstKC12 = view.findViewById(R.id.img_ekst12);
-        imgEkstKC13 = view.findViewById(R.id.img_ekst13);
-        imgEkstKC14 = view.findViewById(R.id.img_ekst14);
-        imgEkstKC15 = view.findViewById(R.id.img_ekst15);
-        imgEkstKC16 = view.findViewById(R.id.img_ekst16);
-        imgEkstKC17 = view.findViewById(R.id.img_ekst17);
+        imgEkstKC1 = view.findViewById(R.id.img_ekst1); mStandar1 = view.findViewById(R.id.rb_standarEkst1);
+        imgEkstKC2 = view.findViewById(R.id.img_ekst2); mStandar2 = view.findViewById(R.id.rb_standarEkst2);
+        imgEkstKC3 = view.findViewById(R.id.img_ekst3); mStandar3 = view.findViewById(R.id.rb_standarEkst3);
+        imgEkstKC4 = view.findViewById(R.id.img_ekst4); mStandar4 = view.findViewById(R.id.rb_standarEkst4);
+        imgEkstKC5 = view.findViewById(R.id.img_ekst5); mStandar5 = view.findViewById(R.id.rb_standarEkst5);
+        imgEkstKC6 = view.findViewById(R.id.img_ekst6); mStandar6 = view.findViewById(R.id.rb_standarEkst6);
+        imgEkstKC7 = view.findViewById(R.id.img_ekst7); mStandar7 = view.findViewById(R.id.rb_standarEkst7);
+        imgEkstKC8 = view.findViewById(R.id.img_ekst8); mStandar8 = view.findViewById(R.id.rb_standarEkst8);
+        imgEkstKC9 = view.findViewById(R.id.img_ekst9); mStandar9 = view.findViewById(R.id.rb_standarEkst9);
+        imgEkstKC10 = view.findViewById(R.id.img_ekst10); mStandar10 = view.findViewById(R.id.rb_standarEkst10);
+        imgEkstKC11 = view.findViewById(R.id.img_ekst11); mStandar11 = view.findViewById(R.id.rb_standarEkst11);
+        imgEkstKC12 = view.findViewById(R.id.img_ekst12); mStandar12 = view.findViewById(R.id.rb_standarEkst12);
+        imgEkstKC13 = view.findViewById(R.id.img_ekst13); mStandar13 = view.findViewById(R.id.rb_standarEkst13);
+        imgEkstKC14 = view.findViewById(R.id.img_ekst14); mStandar14 = view.findViewById(R.id.rb_standarEkst14);
+        imgEkstKC15 = view.findViewById(R.id.img_ekst15); mStandar15 = view.findViewById(R.id.rb_standarEkst15);
+        imgEkstKC16 = view.findViewById(R.id.img_ekst16); mStandar16 = view.findViewById(R.id.rb_standarEkst16);
+        imgEkstKC17 = view.findViewById(R.id.img_ekst17); mStandar17 = view.findViewById(R.id.rb_standarEkst17);
 
         cEkstKC1.setOnClickListener(this);
         cEkstKC2.setOnClickListener(this);
@@ -153,6 +157,7 @@ public class EksteriorFragment extends Fragment implements View.OnClickListener 
         progressDialog = new ProgressDialog(EksteriorFragment.this.getContext());
 
         kodeuker = view.findViewById(R.id.name2);
+        mHasil = view.findViewById(R.id.hasil_monitoring);
         KC data = getActivity().getIntent().getParcelableExtra(KODE_UKER2);
         String name = data.getKCname();
         kodeuker.setText(name);
@@ -626,6 +631,71 @@ public class EksteriorFragment extends Fragment implements View.OnClickListener 
                             }).check();
                 break;
             case R.id.btn_saveEkstKC:
+
+                if (rdButton1 == mStandar1 && rdButton2 == mStandar2 && rdButton3 == mStandar3 && rdButton4 == mStandar4 && rdButton5 == mStandar5 && rdButton6 == mStandar6 &&
+                    rdButton7 == mStandar7 && rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                    rdButton13 == mStandar13 && rdButton14 == mStandar14 && rdButton15 == mStandar15 && rdButton16 == mStandar16 && rdButton17 == mStandar17){
+                    mHasil.setText("100%");
+                }else if (rdButton1 == mStandar1 && rdButton2 != mStandar2  && rdButton3 == mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 == mStandar6 &&
+                    rdButton7 == mStandar7 && rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton13 == mStandar13 &&
+                    rdButton14 == mStandar14 && rdButton15 == mStandar15 && rdButton16 == mStandar16 && rdButton17 == mStandar17){
+                    mHasil.setText("90%");
+                }else if (rdButton1 != mStandar1 && rdButton2 == mStandar2 && rdButton3 != mStandar3 && rdButton4 == mStandar4 && rdButton5 != mStandar5 && rdButton6 == mStandar6 &&
+                    rdButton7 != mStandar7 && rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                    rdButton13 == mStandar13 && rdButton14 == mStandar14 && rdButton15 == mStandar15 && rdButton16 == mStandar6 && rdButton17 == mStandar17){
+                    mHasil.setText("80%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 == mStandar4 && rdButton5 != mStandar5 && rdButton6 == mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 == mStandar13 && rdButton14 == mStandar14 && rdButton15 == mStandar15 && rdButton16 == mStandar6 && rdButton17 == mStandar17){
+                    mHasil.setText("75%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 == mStandar4 && rdButton5 != mStandar5 && rdButton6 == mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 == mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 == mStandar13 && rdButton14 != mStandar14 && rdButton15 == mStandar15 && rdButton16 == mStandar6 && rdButton17 == mStandar17){
+                    mHasil.setText("70%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 == mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 == mStandar13 && rdButton14 != mStandar14 && rdButton15 == mStandar15 && rdButton16 == mStandar6 && rdButton17 == mStandar17){
+                    mHasil.setText("60%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 == mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 == mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 != mStandar13 && rdButton14 != mStandar14 && rdButton15 == mStandar15 && rdButton16 == mStandar6 && rdButton17 == mStandar17){
+                    mHasil.setText("55%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 == mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 != mStandar13 && rdButton14 != mStandar14 && rdButton15 == mStandar15 && rdButton16 == mStandar6 && rdButton17 == mStandar17){
+                    mHasil.setText("50%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 == mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 != mStandar13 && rdButton14 != mStandar14 && rdButton15 == mStandar15 && rdButton16 == mStandar6 && rdButton17 == mStandar17){
+                    mHasil.setText("45%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 == mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 != mStandar13 && rdButton14 != mStandar14 && rdButton15 == mStandar15 && rdButton16 == mStandar6 && rdButton17 == mStandar17){
+                    mHasil.setText("40%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 == mStandar12 &&
+                        rdButton13 != mStandar13 && rdButton14 != mStandar14 && rdButton15 == mStandar15 && rdButton16 == mStandar6 && rdButton17 == mStandar17){
+                    mHasil.setText("35%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 &&
+                        rdButton13 != mStandar13 && rdButton14 != mStandar14 && rdButton15 == mStandar15 && rdButton16 == mStandar6 && rdButton17 == mStandar17){
+                    mHasil.setText("30%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 &&
+                        rdButton13 != mStandar13 && rdButton14 != mStandar14 && rdButton15 != mStandar15 && rdButton16 == mStandar6 && rdButton17 == mStandar17){
+                    mHasil.setText("20%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 &&
+                        rdButton13 != mStandar13 && rdButton14 != mStandar14 && rdButton15 != mStandar15 && rdButton16 != mStandar6 && rdButton17 == mStandar17){
+                    mHasil.setText("10%");
+                }else if (rdButton1 != mStandar1 && rdButton2 != mStandar2 && rdButton3 != mStandar3 && rdButton4 != mStandar4 && rdButton5 != mStandar5 && rdButton6 != mStandar6 &&
+                        rdButton7 != mStandar7 && rdButton8 != mStandar8 && rdButton9 != mStandar9 && rdButton10 != mStandar10 && rdButton11 != mStandar11 && rdButton12 != mStandar12 &&
+                        rdButton13 != mStandar13 && rdButton14 != mStandar14 && rdButton15 != mStandar15 && rdButton16 != mStandar6 && rdButton17 != mStandar17){
+                    mHasil.setText("0%");
+                }
+                else {
+                    mHasil.setText("");
+                }
                 uploadImage();
                btnSave.startAnimation(AnimationUtils.loadAnimation(getContext(), R.anim.anim_item));
                 break;
@@ -1118,6 +1188,12 @@ public class EksteriorFragment extends Fragment implements View.OnClickListener 
                         params.put("stnd17", rdButton17.getText().toString());
                     }else {
                         params.put("", rdButton17.toString());
+                    }
+
+                    if (mHasil != null){
+                        params.put("hasil", mHasil.getText().toString());
+                    }else {
+                        params.put("hasil", mHasil.toString());
                     }
                     params.put("kode", kodeuker.getText().toString());
                     return params;
